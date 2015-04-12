@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Roulez Jeunève</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=yes"> 
+<title>Document sans nom</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/2.3/js/dojo/dijit/themes/claro/claro.css">
+<script type="text/javascript" src="http://serverapi.arcgisonline.com/jsapi/arcgis/?v=2.3compact"></script>
+<script type="text/javascript" src="script.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>	
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+<body>
+<div id="main_content">
+  <h1 class="Title" style="color:gold">Roulez Jeunève</h1>
+  <div id="wait_logo"><img src="ajax-loader.gif" width="32" height="32" /></div>
+  <div id="menu">
+  <ul id="menu_tab">
+  	<li class="menu_onglet"><div id="newsearch" class="btn_menu" onclick="newSearch()"><img class="rotationrefresh" src="repeat.png" style="cursor: pointer"/></div></li>
+  </ul>
+  </div>
+  
+  
+  <div id="main_form">
+  	<form>
+    
+      <label class="input_label" style="color:gold">Adresse<br />
+        <input type="text" onkeydown="if (event.keyCode == 13) locate()" name="adresse" id="adresse" value="Route de Rougemont 65" />
+      </label>
+       <input hidden type="text" onkeydown="if (event.keyCode == 13) locate()">
+      
+
+    
+      <div class="input_radio">
+      <input name="Rechercher" type="button" value="Rechercher" onclick="locate()" style="cursor: pointer"/>
+     
+    </div>
+    </form>
+   
+    </div>
+    
+    <div id="listRoute"> </div>
+    <div class="claro">
+    <div id="map" style="position:relative; /*float:left;*/ display: inline-block; width:80%; height:80%; border-radius: 10px; border:1px solid #000; margin-left: 10%; margin-right: auto; margin-bottom: 5%;"></div>
+<div id="block_direction" style="position:relative; float:left; width:100%; overflow:auto; border:1px solid #000; display: none;">
+<div id="results">
+  
+<table width="100%" border="0" style="border-color: gold">
+  <tr>
+    <td width="185">Routes</td>
+    <td width="141">Temps estimé</td>
+    <td width="122">Distance</td>
+  </tr>
+  <tr>
+    <td>Temps le plus court</td>
+    <td id="table_time_time">&nbsp;</td>
+    <td id="table_time_dist">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Distance la plus courte</td>
+    <td id="table_meter_time">&nbsp;</td>
+    <td id="table_meter_dist">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Route la plus sécurisée</td>
+    <td id="table_secure_time">&nbsp;</td>
+    <td id="table_secure_dist">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Effort sur la route minimum</td>
+    <td id="table_effort_time">&nbsp;</td>
+    <td id="table_effort_dist">&nbsp;</td>
+  </tr>
+</table>
+    
+
+</div>
+			<ul id="tab">
+            	<li class="tab_onblet"><div id="tab_time" class="tab_content_select" onclick="changeTab('time')" style="color:gold; cursor: pointer;">Temps</div></li>
+                <li class="tab_onblet"><div id="tab_meter" class="tab_content" onclick="changeTab('meter')" style="color:gold; cursor: pointer;">Distance</div></li>
+                <li class="tab_onblet"><div id="tab_secure" class="tab_content" onclick="changeTab('secure')" style="color:gold; cursor: pointer;">Sécurité</div></li>
+                <li class="tab_onblet"><div id="tab_effort" class="tab_content" onclick="changeTab('effort')" style="color:gold; cursor: pointer;">Effort</div></li>
+      </ul>  
+              <div id="summary" onclick="zoomToFullRoute();" class="segment"></div>
+
+              <div id="directions"></div>
+	</div>
+	</div>
+</div>
+</body>
+</html>
