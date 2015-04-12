@@ -1,0 +1,198 @@
+.input_label {
+	display: block;
+	margin: 20px;
+	font-weight: bold;
+}
+.input_radio {
+	margin-top: 0px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+#adresse {
+	width: 100%;
+}
+#main_content {
+	/*width: 100%;
+	/*position:relative;*/
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	/*float: left;*/
+	margin: 0% 9% 0%;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 2%;
+	border-radius: 10px;
+	display: inline-block;
+	width: 78%;
+
+}
+.Title {
+	font-weight: bold;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+	text-align: center;
+}
+#wait_logo {
+	position: relative;
+	display: none;
+	text-align: left;
+	width: 100%;
+}
+
+/*
+#block_direction {
+	height: 200px;
+	width: 100%;
+	border: 1px solid #000;
+	overflow: auto;
+	display: none;
+}*/
+.refRoute {
+	font-weight: bold;
+	color: #03C;
+	text-decoration: none;
+	background-color: #CCC;
+	display: block;
+	cursor: pointer;
+}
+
+a.refRoute:hover {
+	
+
+	background-color: #FF9;
+
+
+}
+#tab {
+	position:relative;
+	padding: 5px;
+	float: left;
+	width: 95%;
+	display: inline-block;
+	text-align: center;
+	font-family: "Oswald";
+	
+}
+#tab .tab_onblet {
+	/*float: left;*/
+	display: inline-block;
+	text-decoration: none;
+	/* [disabled]width: 100px; */
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	text-align: center;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-color: black;
+	list-style-type: none;
+	margin: 2px;
+	width: 10%;
+	
+}
+#tab .tab_onblet .tab_content {
+	height: 35px;
+	background-color: #39C;
+	line-height: 35px;
+	padding-top: 0px;
+	padding-right: 15px;
+	padding-bottom: 0px;
+	padding-left: 15px;
+}
+
+#tab .tab_onblet .tab_content_select {
+	height: 35px;
+	background-color: GoldenRod/*#3FF*/;
+	line-height: 35px;
+	padding-top: 0px;
+	padding-right: 15px;
+	padding-bottom: 0px;
+	padding-left: 15px;
+}
+
+
+
+#tab .tab_onblet .tab_content:hover {	
+	background-color: GoldenRod/*#3FF*/;	
+}
+
+#menu { position:relative; width:80%;/*float:left;*/ display:none;}
+
+#menu #menu_tab {
+	position:relative;
+	float: left;
+	width: 100%;
+}
+#menu #menu_tab .menu_onglet {
+	list-style-type: none;/*
+	text-align: center;
+	margin: 5px;
+	padding: 5px;
+	width: 40%;
+	height:50px;
+	display:block;
+	background-color: #999;
+	border: 1px solid #000;*/
+}
+#menu #menu_tab .menu_onglet .btn_menu {
+	
+	
+	
+	
+}
+#main_form {
+	width:100%;
+	float: left;
+	position: relative;
+	
+}
+#listRoute {
+	width:100%;
+	float: left;
+	position: relative;
+	
+}
+#block_direction #summary {
+	display: block;
+	float: left;
+	width: 100%;
+	position: relative;
+}
+#block_direction #directions {
+	float: left;
+	width: 100%;
+	position: relative;
+}
+
+body {
+	background-image: url('trianglify.svg');
+	/*background-color: CornflowerBlue;*/
+	background-size:100% 100%;
+	background-size:cover;
+	color: gold;
+}
+
+a:visited {
+	color:gold;
+}
+
+h1 { 
+    font-family:"Arvo";
+	font-weight:normal;
+	font-size: 55px;
+}
+
+.rotationrefresh:hover{
+	-webkit-transform: rotate(225deg) scale(1.5);
+	-moz-transform: rotate(225deg) scale(1.5);
+	transform: rotate(360deg) scale(1.5);
+	transition: all 1s ease;
+}
