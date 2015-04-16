@@ -46,7 +46,7 @@ public class MainActivity extends Activity implements OnClickListener{
 			EditText address = (EditText) findViewById(R.id.address);
 			query = address.getText().toString();
 						
-			String url = "http://mashups.unige.ch/2014-2015/olivier.glaus@bluewin.ch/OpenGeneva/itivelo.html"+"?adresse="+query;
+			String url = "http://mashups.unige.ch/2014-2015/olivier.glaus@bluewin.ch/OpenGeneva/itivelo.html"+"#adresse="+query;
 
 			Log.d("name: ", url);
 			
