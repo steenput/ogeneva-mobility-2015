@@ -16,10 +16,18 @@
     <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>	
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
+<script>
+  function fillAddress(){
+  var hashParams = window.location.hash.substr(1).split('&'); // substr(1) to remove the `#`
+  for(var i = 0; i < hashParams.length; i++){
+  var p = hashParams[i].split('=');
+  document.getElementById(p[0]).value = decodeURIComponent(p[1]);;
+}}
+</script>
 
 </head>
 
-<body>
+<body onload="fillAddress();">
 <div id="main_content">
   <h1 class="Title" style="color:gold">Roulez Jeunève</h1>
   <div id="wait_logo"><img src="ajax-loader.gif" width="32" height="32" /></div>
