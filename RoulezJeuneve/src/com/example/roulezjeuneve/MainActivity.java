@@ -64,12 +64,14 @@ public class MainActivity extends Activity implements OnClickListener{
 	    		alertDialog.show();
 				
 			}else{
-			Uri webpage = Uri.parse(url);
-			Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+			
+			//Uri webpage = Uri.parse(url);
+			Intent intent = new Intent(this, Webview.class);
+			intent.putExtra("address", query);
 			Toast.makeText(this, "searching..", Toast.LENGTH_SHORT).show();
-			if(intent.resolveActivity(getPackageManager()) != null) {
+			
 		        startActivity(intent);
-				}
+				
 			}
 		
 		}
